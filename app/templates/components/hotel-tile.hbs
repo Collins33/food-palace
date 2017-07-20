@@ -1,3 +1,4 @@
+{{#link-to 'foodz' hotel.id}}
 <div class="row well hotels">
 <h4>{{hotel.name}}</h4>
 <h4>{{hotel.location}}</h4>
@@ -6,3 +7,4 @@
 {{update-hotel hotel=hotel update="update"}}
 <button {{action 'deleteHotel' hotel}} class="btn btn-danger">DELETE HOTEL</button>
 </div>
+{{/link-to}}

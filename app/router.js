@@ -8,7 +8,7 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('contact');
-  this.route('foodz');
+  this.route('foodz', {path: '/foodz/:hotel_id'});
 });
 
 export default Router;
