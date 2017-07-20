@@ -1,0 +1,17 @@
+{ "hotels": [{
+    "name": "Veruca Salt",
+    "location": "San Francisco",
+    "description": "Estate",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg"
+  }, {
+    "name": "the mufasa",
+    "location": "new york",
+    "description": "Estate",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg"
+  }, {
+    "name": "black blood",
+    "location": "nairobi",
+    "description": "Estate",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg"
+  }]
+}

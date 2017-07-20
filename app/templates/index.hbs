@@ -1,0 +1,11 @@
+<h1>food-palace</h1>
+
+{{#each model as |hotel|}}
+<h4>{{hotel.name}}</h4>
+<h4>{{hotel.location}}</h4>
+<h4>{{hotel.description}}</h4>
+{{/each}}
+
+{{#link-to 'index'}}home{{/link-to}}
+{{#link-to 'contact'}}contact us{{/link-to}}
+{{#link-to 'foodz'}}get a meal{{/link-to}}
