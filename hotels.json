@@ -2,16 +2,16 @@
     "name": "Veruca Salt",
     "location": "San Francisco",
     "description": "Estate",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg"
+    "image": "https://cdn.pixabay.com/photo/2014/09/13/21/30/dinner-table-444434_960_720.jpg"
   }, {
     "name": "the mufasa",
     "location": "new york",
     "description": "Estate",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg"
+    "image": "https://cdn.pixabay.com/photo/2014/09/17/20/26/restaurant-449952_960_720.jpg"
   }, {
     "name": "black blood",
     "location": "nairobi",
     "description": "Estate",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg"
+    "image": "https://cdn.pixabay.com/photo/2016/03/05/09/22/eat-1237431__340.jpg"
   }]
 }

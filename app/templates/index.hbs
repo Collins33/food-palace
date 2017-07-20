@@ -1,10 +1,9 @@
 <h1>food-palace</h1>
 
 {{#each model as |hotel|}}
-<h4>{{hotel.name}}</h4>
-<h4>{{hotel.location}}</h4>
-<h4>{{hotel.description}}</h4>
+{{hotel-tile hotel=hotel deleteHotel="deleteHotel"}}
 {{/each}}
+{{new-hotel}}
 
 {{#link-to 'index'}}home{{/link-to}}
 {{#link-to 'contact'}}contact us{{/link-to}}
