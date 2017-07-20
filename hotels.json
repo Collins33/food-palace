@@ -13,5 +13,14 @@
     "location": "nairobi",
     "description": "Estate",
     "image": "https://cdn.pixabay.com/photo/2016/03/05/09/22/eat-1237431__340.jpg"
+  }],
+  "ratings": [{
+    "author": "Andrea",
+    "score": 4,
+    "content": "Did not fall down."
+  }, {
+    "author": "Alex",
+    "score": 9,
+    "content": "Nice view of the volcano!"
   }]
 }

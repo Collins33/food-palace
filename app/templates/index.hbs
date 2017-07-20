@@ -4,13 +4,18 @@
 </div>
 
 
-{{#each model as |hotel|}}
+{{#each model.hotels as |hotel|}}
 {{hotel-tile hotel=hotel deleteHotel="deleteHotel" update="update"}}
 {{/each}}
 
 {{new-hotel addNewRestaurant="addNewRestaurant"}}
+{{#each model.ratings as |rating|}}
+<h4>NAME:{{rating.author}}</h4>
+<h4>RATING:{{rating.score}}</h4>
+<h4>COMMENTS:{{rating.content}}</h4>
+{{/each}}
 
 {{#link-to 'index'}}home{{/link-to}}
 {{#link-to 'contact'}}contact us{{/link-to}}
-{{#link-to 'foodz'}}get a meal{{/link-to}}
+
 </div>

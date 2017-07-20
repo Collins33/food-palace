@@ -2,7 +2,10 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(){
-    return this.store.findAll('hotel');
+    return Ember.RSVP.hash({
+      hotels: this.store.findAll('hotel'),
+      ratings: this.store.findAll('rating')
+    });
   },
   actions:{
     deleteHotel(hotel){
