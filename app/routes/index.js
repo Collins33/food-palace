@@ -8,6 +8,11 @@ export default Ember.Route.extend({
     deleteHotel(hotel){
       hotel.destroyRecord();
       this.transitionTo('index');
+    },
+    addNewRestaurant(params){
+      var newRestaurant= this.store.createRecord('hotel',params);
+      newRestaurant.save();
+      this.transitionTo('index');
     }
   }
 });

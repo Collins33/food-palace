@@ -5,6 +5,16 @@ export default Ember.Component.extend({
   actions:{
     toggleHotelForm(){
       this.set('addRestaurant',true);
+    },
+    addNewRestaurant(){
+      var params={
+        name: this.get('name'),
+        location: this.get('location'),
+        image: this.get('image'),
+        description: this.get('description')
+      };
+      this.set('addRestaurant',false);
+      this.sendAction('addNewRestaurant',params);
     }
   }
 });
