@@ -9,6 +9,8 @@
 {{/each}}
 
 {{new-hotel addNewRestaurant="addNewRestaurant"}}
+<hr>
+{{new-review saveReview="saveReview"}}
 {{#each model.ratings as |rating|}}
 <h4>NAME:{{rating.author}}</h4>
 <h4>RATING:{{rating.score}}</h4>

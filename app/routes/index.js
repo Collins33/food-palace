@@ -26,5 +26,10 @@ export default Ember.Route.extend({
       hotel.save();
       this.transitionTo('index');
     },
+    saveReview(params) {
+      var newRating = this.store.createRecord('rating', params);
+      newRating.save();
+      this.transitionTo('index');
+    },
   }
 });
