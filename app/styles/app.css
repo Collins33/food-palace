@@ -6,3 +6,6 @@ img{
   margin-left: 250px;
   margin-right: 250px;
 }
+body{
+  font-family: 'Inconsolata', monospace;
+}
