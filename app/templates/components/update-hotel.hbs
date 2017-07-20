@@ -1,0 +1,23 @@
+{{#if showUpdateForm}}
+<form>
+<div class="form-group">
+<label for="name">enter restaurant name</label>
+{{input value=name id="name" placehoder=hotel.name}}
+</div>
+<div class="form-group">
+  <label for="location">enter location of restaurant</label>
+  {{input value=location id="location"}}
+</div>
+<div class="form-group">
+  <label for="image">image of restaurant</label>
+  {{input value=image id="image"}}
+</div>
+<div class="form-group">
+  <label>enter description</label>
+  {{input value=description id="description"}}
+  <button class="btn btn-primary" {{action 'update' hotel}}>UPDATE</button>
+</div>
+</form>
+{{else}}
+<button {{action 'showUpdateFormButton'}}>update</button>
+{{/if}}

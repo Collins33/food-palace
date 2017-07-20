@@ -13,6 +13,15 @@ export default Ember.Route.extend({
       var newRestaurant= this.store.createRecord('hotel',params);
       newRestaurant.save();
       this.transitionTo('index');
-    }
+    },
+    update(hotel,params){
+      Object.keys(params).forEach(function(key){
+        if(params[key] !==undefined){
+          hotel.set(key,params[key]);
+        }
+      });
+      hotel.save();
+      this.transitionTo('index');
+    },
   }
 });

@@ -3,5 +3,6 @@
 <h4>{{hotel.location}}</h4>
 <h4>{{hotel.description}}</h4>
 <img src={{hotel.image}}/>
+{{update-hotel hotel=hotel update="update"}}
 <button {{action 'deleteHotel' hotel}} class="btn btn-danger">DELETE HOTEL</button>
 </div>
