@@ -1,10 +1,16 @@
+<div class="container">
+  <div class="row wells">
 <h1>food-palace</h1>
+</div>
+
 
 {{#each model as |hotel|}}
 {{hotel-tile hotel=hotel deleteHotel="deleteHotel"}}
 {{/each}}
+
 {{new-hotel addNewRestaurant="addNewRestaurant"}}
 
 {{#link-to 'index'}}home{{/link-to}}
 {{#link-to 'contact'}}contact us{{/link-to}}
 {{#link-to 'foodz'}}get a meal{{/link-to}}
+</div>
