@@ -2,6 +2,9 @@
 
 This is a platform for users to review restaurants and get more information about them.
 
+# author
+COLLINS NJAU
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.

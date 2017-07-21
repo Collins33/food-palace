@@ -1,3 +1,21 @@
-<div class="container">
-{{outlet}}
+<div class= "container">
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">food-palace</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li>{{#link-to 'index'}}home{{/link-to}}</li>
+      <li>{{#link-to 'contact'}}contact us{{/link-to}}</li>
+
+    </ul>
+  </div>
+</nav>
+    {{outlet}}
+  <hr>
+  <footer>
+  <div class="row">
+
+  </div>
+  </footer>
 </div>
