@@ -10,12 +10,8 @@
 
 {{new-hotel addNewRestaurant="addNewRestaurant"}}
 <hr>
-{{new-review saveReview="saveReview"}}
-{{#each model.ratings as |rating|}}
-<h4>NAME:{{rating.author}}</h4>
-<h4>RATING:{{rating.score}}</h4>
-<h4>COMMENTS:{{rating.content}}</h4>
-{{/each}}
+
+
 
 {{#link-to 'index'}}home{{/link-to}}
 {{#link-to 'contact'}}contact us{{/link-to}}

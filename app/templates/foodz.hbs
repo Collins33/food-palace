@@ -3,3 +3,13 @@
   <h2>MORE INFORMATION ABOUT <span class="name">{{model.name}}</span></h2>
   {{hotel-detail hotel=model}}
 </div>
+<div class="row">
+Reviews here
+  
+  {{#each model.ratings as |rating|}}
+  {{review-tile rating=rating}}
+  {{/each}}
+</div>
+<div class="row">
+  {{new-review saveReview="saveReview" hotel=model}}
+</div>
