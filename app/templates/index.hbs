@@ -5,7 +5,7 @@
 
 
 {{#each model.hotels as |hotel|}}
-{{hotel-tile hotel=hotel deleteHotel="deleteHotel" update="update"}}
+{{hotel-popularity hotel}}{{hotel-tile hotel=hotel deleteHotel="deleteHotel" update="update"}}
 {{/each}}
 
 {{new-hotel addNewRestaurant="addNewRestaurant"}}
