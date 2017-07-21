@@ -13,3 +13,7 @@ body{
   font-size: 40px;
   font-family: 'Fresca', sans-serif;
 }
+.map-display {
+    height: 600px;
+    width: 600px;
+  }

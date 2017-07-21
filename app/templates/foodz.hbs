@@ -5,11 +5,15 @@
 </div>
 <div class="row">
 Reviews here
-  
+
   {{#each model.ratings as |rating|}}
   {{review-tile rating=rating}}
   {{/each}}
 </div>
 <div class="row">
   {{new-review saveReview="saveReview" hotel=model}}
+</div>
+<div class="row well well-lg">
+  <h3>MAP OF {{model.name}} in {{model.location}}</h3>
+  {{google-map hotel=model}}
 </div>
