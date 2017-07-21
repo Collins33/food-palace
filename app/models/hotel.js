@@ -5,5 +5,7 @@ export default DS.Model.extend({
   location: DS.attr(),
   image: DS.attr(),
   description: DS.attr(),
-  ratings: DS.hasMany('rating', {async: true})
+  ratings: DS.hasMany('rating', {async: true}),
+  latitude: DS.attr('number'),
+  longitude: DS.attr('number')
 });

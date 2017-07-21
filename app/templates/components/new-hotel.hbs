@@ -1,24 +1,28 @@
 {{#if addRestaurant}}
-<h2>add your restaurant</h2>
-<form>
-<div class="form-group">
-<label for="name">enter restaurant name</label>
-{{input value=name id="name"}}
-</div>
-<div class="form-group">
-  <label for="location">enter location of restaurant</label>
-  {{input value=location id="location"}}
-</div>
-<div class="form-group">
-  <label for="image">image of restaurant</label>
-  {{input value=image id="image"}}
-</div>
-<div class="form-group">
-  <label>enter description</label>
-  {{input value=description id="description"}}
-  <button class="btn btn-primary" {{action 'addNewRestaurant'}}>SUBMIT</button>
-</div>
-</form>
+  <h2>add your restaurant</h2>
+  <form>
+    <div class="form-group">
+      <label for="name">enter restaurant name</label> {{input value=name id="name"}}
+    </div>
+    <div class="form-group">
+      <label for="location">enter location of restaurant</label> {{input value=location id="location"}}
+    </div>
+    <div class="form-group">
+      <label for="image">image of restaurant</label> {{input value=image id="image"}}
+    </div>
+    <div class="form-group">
+      <label>enter description</label> {{input value=description id="description"}}
+
+    </div>
+    <div class="form-group">
+      <label for="latitude">Latitude</label> {{input value=latitude id="latitude"}}
+    </div>
+
+    <div class="form-group">
+      <label for="longitude">Longitude</label> {{input value=longitude id="longitude"}}
+    </div>
+    <button class="btn btn-primary" {{action 'addNewRestaurant'}}>SUBMIT</button>
+  </form>
 {{else}}
-<button {{action 'toggleHotelForm'}} class="btn btn-info">ADD RESTAURANT</button>
+  <button {{action 'toggleHotelForm'}} class="btn btn-info">ADD RESTAURANT</button>
 {{/if}}
