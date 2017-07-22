@@ -1,19 +1,37 @@
-img{
+img {
   width: 300px;
   height: 300px;
 }
-.hotels{
+
+.hotels {
   margin-left: 250px;
   margin-right: 250px;
 }
-body{
+
+body {
   font-family: 'Inconsolata', monospace;
 }
-.name{
+
+.name {
   font-size: 40px;
   font-family: 'Fresca', sans-serif;
 }
+
 .map-display {
-    height: 600px;
-    width: 600px;
-  }
+  height: 600px;
+  width: 600px;
+}
+
+.footerimage {
+  width: 90px;
+  height: 90px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+.footer{
+  background-image: url("http://timmatic.com/i/2016/11/website-background-images-tile-wallpaper-full-hd.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
