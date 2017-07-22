@@ -1,15 +1,17 @@
 <div class="container">
-  <div class="row wells">
-<h1>food-palace</h1>
-</div>
+  <div class="row well about">
+    <h1 class="text-center">food-palace</h1>
+    <h1 class="text-center">Air your views on restaurants visited</h1>
+    <h1 class="text-center">Get instant access to what other people think of popular restaurants</h1>
+  </div>
 
 
-{{#each model.hotels as |hotel|}}
-{{hotel-popularity hotel}}{{hotel-tile hotel=hotel deleteHotel="deleteHotel" update="update"}}
-{{/each}}
+  {{#each model.hotels as |hotel|}}
+    {{hotel-popularity hotel}}{{hotel-tile hotel=hotel deleteHotel="deleteHotel" update="update"}}
+  {{/each}}
 
-{{new-hotel addNewRestaurant="addNewRestaurant"}}
-<hr>
+  {{new-hotel addNewRestaurant="addNewRestaurant"}}
+  <hr>
 
 
 

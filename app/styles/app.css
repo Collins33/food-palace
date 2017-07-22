@@ -35,3 +35,14 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.about{
+  background-image: url("https://images.pexels.com/photos/480711/pexels-photo-480711.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-family: 'Abril Fatface', cursive;
+}
