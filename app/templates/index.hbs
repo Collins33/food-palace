@@ -4,15 +4,15 @@
     <h1 class="text-center">Air your views on restaurants visited</h1>
     <h1 class="text-center">Get instant access to what other people think of popular restaurants</h1>
   </div>
-<div class="row">
-
-  {{#each model.hotels as |hotel|}}
-    {{hotel-popularity hotel}}{{hotel-tile hotel=hotel deleteHotel="deleteHotel" update="update"}}
-  {{/each}}
-
-  {{new-hotel addNewRestaurant="addNewRestaurant"}}
-  <hr>
-</div>
+  <div class="row">
+{{!loop through the model which is model.hotels to display the model containing the hotel}}
+    {{#each model.hotels as |hotel|}}
+      {{hotel-popularity hotel}}{{hotel-tile hotel=hotel deleteHotel="deleteHotel" update="update"}}
+    {{/each}}
+{{!new restaurant form}}
+    {{new-hotel addNewRestaurant="addNewRestaurant"}}
+    <hr>
+  </div>
 
 
 

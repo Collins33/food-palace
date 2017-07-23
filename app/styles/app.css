@@ -6,6 +6,10 @@ img {
   margin-left: 100px;
   margin-right: 400px;
 }
+.btn-responsive {
+    white-space: normal !important;
+    word-wrap: break-word;
+}
 
 .hotels {
   margin-left: 250px;

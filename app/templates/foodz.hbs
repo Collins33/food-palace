@@ -1,17 +1,20 @@
 
 <div class="row well">
   <h2>MORE INFORMATION ABOUT <span class="name">{{model.name}}</span></h2>
+  {{!more information about a selected restaurant}}
   {{hotel-detail hotel=model}}
 
 </div>
 <div class="row">
 Reviews here
-
+{{!loop through the model.ratings and display them as rating}}
   {{#each model.ratings as |rating|}}
   {{review-tile rating=rating}}
   {{/each}}
 
 </div>
 <div class="row">
+  {{!add review form}}
+  
   {{new-review saveReview="saveReview" hotel=model}}
 </div>
